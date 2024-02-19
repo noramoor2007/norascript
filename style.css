@@ -168,6 +168,5 @@ img.logo {
   width: 100px;
 }
 .txtfileslist {
-  border-width: 0px;
-  font-size:14px;
+  border-width: 4px;
 }
