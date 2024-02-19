@@ -10,7 +10,11 @@ body {
 h1 {
   color: black;
 }
-
+button.jupyterstuff {
+  background-color: #ff87bc;
+  border-width: 4px;
+  text-align: left;
+}
 button {
   background-color: transparent;
   border-width: 0;
@@ -167,8 +171,4 @@ td.headerstuff {
 }
 img.logo {
   width: 100px;
-}
-.jupyterstuff {
-  background-color: #ff87bc;
-  text-align: left;
 }
