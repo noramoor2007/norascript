@@ -1,0 +1,169 @@
+body {
+  margin: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-family: system-ui;
+  background: url("IMG_4811.jpg");
+  background-size: cover;
+}
+
+h1 {
+  color: black;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button.codinglangbutt {
+  text-align: left;
+  font-size: 15px;
+  background-color: #ff87bc;
+  height: 25px;
+  width: auto;
+  border-radius: 10px;
+}
+
+td:hover {
+  background-color: #ff5db4;
+  border-radius: 10px;
+}
+
+years {
+  display: inline-block;
+  background-color: transparent;
+  align-content: space-around;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 10px;
+
+}
+button {
+  border-radius: 10px;
+}
+codinglang {
+  display: inline-block;
+  background-color: #ff87bc;
+  border-width: 0px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+codinglang:hover {
+  background-color: #ff5db4;
+  border-radius: 10px;
+
+}
+
+date1 {
+  display: inline-block;
+  background-color: #ff87bc;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+date1:hover {
+  background-color: #ff5db4;
+}
+
+projnum {
+  display: block;
+  background-color: #ff87bc;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+projnum:hover {
+  background-color: #ff5db4;
+}
+
+.tooltip-wrap {
+  position: relative;
+}
+
+.tooltip-wrap .tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: #fff;
+  padding: .5em;
+  min-width: 10rem;
+  font-size: 15px;
+
+}
+
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
+}
+
+.morelinks {
+  font-size: 15px;
+  font-family: system-ui;
+  width: auto;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #ff87bc;
+}
+
+a {
+  text-decoration: underline;
+  color: #000000;
+}
+
+table {
+  line-height: 25px;
+  border-width: 0;
+  background-color: transparent;
+  font-size: 15px;
+  width: 700px;
+  border-radius: 10px;
+}
+
+td {
+  border-width: 0;
+  font-size: 15px;
+  background-color: #ff87bc;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+td.headerstuff {
+  text-align: center;
+  text-decoration: bold;
+  border-radius: 10px;
+}
+
+.profilepic {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.profilepic:hover .tooltip-content {
+  width: 23%;
+}
+.projectsubcat {
+  font-weight: 250;
+  line-height: 5px;
+}
+.projectselect {
+  border-color: #ff87bc;
+  border-radius: 10px;
+  background-color: #ff87bc;
+  border-width: 4px;
+}
+.schoollogo {
+  width: 3%;
+}
+img.logo {
+  width: 100px;
+}

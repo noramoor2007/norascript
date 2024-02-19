@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Python Projects</title>
+  <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+<a href = "index.html"><img class = "logo" src = "Screen_Shot_2024-02-18_at_4.20.38_PM-removebg-preview.png"></a>
+  <h1>2023-2024 Coding Portfolio</h1>
+  <h2>Python Projects</h2>
+  <p>Python is a high-level (in the realm of computer science), general programming language. The philosophy behind the design of Python emphasizes its readability. Like JavaScript, Objective-C, which is used when writing software for OS X and iOS, PHP, Ruby, Lisp, and Tcl , Python is a dynamically typed and garbage-collected program, which means that it periodically frees and reclaims blocks of memory that no longer are in use. In addition, Python "supports multiple programming paradigms, which include structured, object-oriented and functional programming" (Wikipedia).
+</p>
+  <h3 class = "projectsubcat">Columbia University&nbsp&nbsp<img class="schoollogo" src ="https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Columbia_Lions_logo.svg/1200px-Columbia_Lions_logo.svg.png"></h3>
+  <select name = "columbiauniversityprojects" id = "websiteDropdown" class = "projectselect" onchange ="goToWebsite ()">
+    <option value = "">Select a Type</option>
+    <option value ="JupyterNotebookPython.html">My Jupyter Notebook</option>
+    <option value = "https://gosqas.org/">Exercises</option>
+    <option value = "https://gosqas.org/">CodingBat Problems</option>
+  </select>
+  
+</body>
+  <script>
+    function goToWebsite () {
+      var dropdown = document.getElementById ("websiteDropdown");
+      var selectedOption = dropdown.options[dropdown.selectedIndex].value; // Dropdown refers to the dropdown element on the webpage.
+      // dropdown.selectedIndex gets the index of the currently selected option in the dropdown.
+      // dropdown.options gets an array-like object that represents the available options in the dropdown. That basically means that it's an array of all the options in the dropdown.
+      // By accessing .value at the end of the line, we are able to get the value of the selected option from the dropdown, and that is what the variable will be equal to.
+      if (selectedOption) {
+        window.location = selectedOption;
+      }
+    }
+  </script>
+</html>

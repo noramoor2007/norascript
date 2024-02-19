@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Java Projects</title>
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+<a href = "index.html"><img class = "logo" src = "Screen_Shot_2024-02-18_at_4.20.38_PM-removebg-preview.png"></a>
+  <h1>2023-2024 Coding Portfolio</h1>
+  <h2>Java Projects</h2>
+  <h3 class = "projectsubcat">Columbia University&nbsp&nbsp<img class="schoollogo" src ="https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Columbia_Lions_logo.svg/1200px-Columbia_Lions_logo.svg.png"></h3>
+  <select name = "columbiauniversityprojects" id = "websiteDropdown" onchange = "goToWebsite()" class = "projectselect">
+    <option value = "">Select a Type</option>
+    <option value = "https://gosqas.org/" class ="fundamentals">Fundamentals of Java</option>
+    <option value = "https://gosqas.org/">Exercises</option>
+    <option value = "https://gosqas.org/">CodingBat Problems</option>
+  </select>
+  <h3 name = "brearleyschoolprojects" id = "brearleyschoolprojects" class = "projectsubcat">The Brearley School&nbsp&nbsp<img class = "schoollogo" src="https://mission.brearley.org/static/seal-22c6b1e4a0358e3b1c6db41491dd2c09.svg"></h3>
+  <select id = "websiteDropdown" class = "projectselect" onchange ="goToWebsite ()">
+    <option value = "">Select a Type</option>
+    <option value = "https://gosqas.org/"><a href ="google.com">Individual Projects</a></option>
+    <option value = "https://gosqas.org/">Computer Science Class</option>
+    <option value = "https://gosqas.org/">Computer Science Club</option>
+  </select>
+  <br><br>
+  
+</body>
+  <script>
+    function goToWebsite () {
+      var dropdown = document.getElementById ("websiteDropdown");
+      var selectedOption = dropdown.options[dropdown.selectedIndex].value; // Dropdown refers to the dropdown element on the webpage.
+      // dropdown.selectedIndex gets the index of the currently selected option in the dropdown.
+      // dropdown.options gets an array-like object that represents the available options in the dropdown. That basically means that it's an array of all the options in the dropdown.
+      // By accessing .value at the end of the line, we are able to get the value of the selected option from the dropdown, and that is what the variable will be equal to.
+      if (selectedOption) {
+        window.location = selectedOption;
+      }
+    }
+  </script>
+</html>
