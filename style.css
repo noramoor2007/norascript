@@ -14,7 +14,7 @@ button.jupyterstuff {
   background-color: #ff87bc;
   text-align: left;
   border-width: 0px;
-  width: 40px;
+  width: fit-content;
 }
 button {
   background-color: transparent;
@@ -168,7 +168,7 @@ td.headerstuff {
   border-width: 4px;
 }
 .schoollogo {
-  width: 200px;
+  width: 50px;
 }
 img.logo {
   width: 100px;
