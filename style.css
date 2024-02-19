@@ -124,7 +124,14 @@ projnum:hover {
   border-radius: 10px;
   background-color: #ff87bc;
 }
-
+button {
+  background: linear-gradient(to right),linear-gradient(to right,#ff5db4,#ff147e,rgba(0, 100, 200, 1));
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+button:hover {
+  background-size: 0 25px, 100% 25px;
+}
 a.hometable {
   text-decoration: none;
   background:
