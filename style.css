@@ -167,3 +167,6 @@ td.headerstuff {
 img.logo {
   width: 100px;
 }
+button:hover {
+  color: #ff5db4;
+}
