@@ -13,6 +13,8 @@ h1 {
 button.jupyterstuff {
   background-color: #ff87bc;
   text-align: left;
+  border-width: 0px;
+  width: fit-content;
 }
 button {
   background-color: transparent;
