@@ -15,6 +15,7 @@ button.jupyterstuff {
   text-align: left;
   border-width: 0px;
   width: fit-content;
+  height: 4px;
 }
 button {
   background-color: transparent;
