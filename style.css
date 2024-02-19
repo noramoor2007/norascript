@@ -168,3 +168,7 @@ td.headerstuff {
 img.logo {
   width: 100px;
 }
+.jupyterstuff {
+  background-color: #ff87bc;
+  text-align: left;
+}
