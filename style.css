@@ -167,3 +167,8 @@ td.headerstuff {
 img.logo {
   width: 100px;
 }
+#txtfileslist {
+  border-width: 0;
+  width:5px;
+  font-size:larger;
+}
