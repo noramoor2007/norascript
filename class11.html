@@ -14,7 +14,7 @@
 <a href = "index.html"><img class = "logo" src = "Screen_Shot_2024-02-18_at_4.20.38_PM-removebg-preview.png"></a>
 <h1>Columbia University (Python) - Class 11</h1>
 <li><a href = "C11LectureNotes.html">Class 11 Lecture Notes</a></li>
-<li><select>
+<li><select id = "txtfileslist">
   <option class = "txtfiles" value = "">Select TXT File</option>
   <option class = "txtfiles" value = "file.txt">file.txt</option>
   <option class = "txtfiles" value = "filetoread.txt">filetoread.txt</option>
@@ -25,8 +25,12 @@
 </select></li>
   </body>
   <script>
-    function dropdownMenu {
-      var dropdown = document.getElementsByClassName ("")
+    function dropdownMenu () {
+      var dropdown = document.getElementsById ("txtfileslist");
+      var selectedOption = dropdown.options [dropdown.selectedIndex].value;
+      if (selectedOption) {
+        window.location = selectedOption.value;
+      }
     }
   </script>
 </html>
