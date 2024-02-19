@@ -130,14 +130,14 @@ a.hometable {
   background:
     linear-gradient(
       to right,
-      #ff87bc,
-      #ff87bc
+      transparent,
+      transparent
     ),
     linear-gradient(
       to right,
       #ff5db4,
-      #ff87bc,
-      #ffa987
+      #ff147e,
+      rgba(0, 100, 200, 1)
   );
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
