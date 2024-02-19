@@ -12,10 +12,10 @@ h1 {
 }
 button.jupyterstuff {
   background-color: #ff87bc;
-  border-width: 4px;
   text-align: left;
 }
 button {
+  background-color: transparent;
   border-width: 0;
   width: 100%;
   cursor: pointer;
