@@ -1,3 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
+
+::-moz-selection { background: rgba(0,0,0,0.2); }
+::selection { background: rgba(0,0,0,0.2); }
+
+/**** Skip to line 36 for the hover code ****/
+
 body {
   margin: 100px;
   margin-top: 100px;
