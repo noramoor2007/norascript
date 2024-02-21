@@ -224,7 +224,7 @@ img.logo {
 dfn {
   background: rgba(0,0,0,0.2);
   border-bottom: dashed 1px rgba(0,0,0,0.8);
-  padding: 0 0.1em;
+  padding: 0 0.4em;
   cursor: help;
   font-style: normal;
   position: relative;
@@ -238,7 +238,7 @@ dfn::after {
   width: 230px;
   font-size: 13px;
   font-weight: 700;
-  line-height: 1em;
+  line-height: 1.5em;
   padding: 0.5em 0.8em;
   background: rgba(0,0,0,0.8);
   color: #fff;
@@ -249,7 +249,7 @@ dfn::before {
   content: '';
   display: block;
   position: absolute;
-  top: 10px; left: 18px;
+  top: 12px; left: 20px;
   opacity: 0;
   width: 0; height: 0;
   border: solid transparent 5px;
@@ -259,5 +259,5 @@ dfn::before {
 dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
 dfn:hover::after,
 dfn:hover::before {opacity: 1;}
-dfn:hover::after {top: 20px;}
+dfn:hover::after {top: 30px;}
 dfn:hover::before {top: 20px;}
