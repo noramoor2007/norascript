@@ -224,7 +224,7 @@ img.logo {
 dfn {
   background: rgba(0,0,0,0.2);
   border-bottom: dashed 1px rgba(0,0,0,0.8);
-  padding: 0.03px;
+  padding: 0.06px;
   cursor: help;
   font-style: normal;
   position: relative;
