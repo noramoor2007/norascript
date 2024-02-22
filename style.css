@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  color: black;
+  color: #2e2e2e;
 }
 button.jupyterstuff {
   background-color: rgb(255, 135, 188);
@@ -163,7 +163,7 @@ a.hometable:hover {
 }
 a {
   text-decoration: underline;
-  color: #000000;
+  color: #4b4b4b;
   font-family: system-ui;
 }
 
@@ -212,7 +212,7 @@ td.headerstuff {
   width: 30px;
 }
 img.logo {
-  width: 100px;
+  width: 200px;
 }
 .lectures {
   text-decoration: none;
