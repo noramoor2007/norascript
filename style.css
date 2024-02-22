@@ -262,11 +262,12 @@ dfn:hover::before {opacity: 1;}
 dfn:hover::after {top: 30px;}
 dfn:hover::before {top: 20px;}
 
-::-moz-selection {
-  color: #ebf8f1;
-  background-color: #ff5db4;
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
 }
+
 ::selection {
-  color: #ebf8f1;
-  background-color: #ff5db4;
+  color: red;
+  background: yellow;
 }
