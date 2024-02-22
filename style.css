@@ -26,7 +26,7 @@ button.jupyterstuff {
 button {
   background-color: transparent;
   border-width: 0;
-  width: 107%;
+  width: 107%; 
   cursor: pointer;
   border-radius: 10px;
 }
