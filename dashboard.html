@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maps Quest</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Logo Section -->
+      <img src="logo.png" alt="Geo Quest Logo" class="logo" />
+
+      <!-- Main Content -->
+      <div class="content">
+        <h2>Click a dot to learn more or quiz yourself!</h2>
+        <div class="map-container">
+          <img src="usmap.png" alt="US Map" class="map" />
+          <!-- Pulsing Buttons -->
+          <div class="dot california" onclick="showPopup('California')"></div>
+          <div
+            style="margin-top: -40px; margin-left: -30px;"
+            class="dot texas"
+            onclick="showPopup('Texas')"
+          ></div>
+          <div
+            style="margin-top: -80px;"
+            class="dot nyc"
+            onclick="showPopup('New York')"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Popup -->
+      <div id="popup" class="popup hidden">
+        <div class="popup-content">
+          <h3 id="popup-title">State Name</h3>
+          <p>Here is some information about the selected state!</p>
+          <button class="close-btn" onclick="hidePopup()">Close</button>
+          <a href="california.html"><button class="quiz-btn">Quiz</button></a>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div id="overlay" class="overlay hidden"></div>
+    </div>
+    <div class="arrows">
+      <!-- For going front and back -->
+      <a href="index.html"><button class="back">←</button></a>
+      <a href="dashboard.html"><button class="front">→</button></a>
+    </div>
+  </body>
+  <script>
+      // Show Popup
+    function showPopup(state) {
+      const popup = document.getElementById('popup');
+      const overlay = document.getElementById('overlay');
+      document.getElementById('popup-title').innerText = state;
+
+      popup.classList.remove('hidden');
+      popup.classList.add('show');
+      overlay.classList.remove('hidden');
+    }
+
+    // Hide Popup
+    function hidePopup() {
+      const popup = document.getElementById('popup');
+      const overlay = document.getElementById('overlay');
+
+      popup.classList.add('hidden');
+      popup.classList.remove('show');
+      overlay.classList.add('hidden');
+    }
+  </script>
+  <style>
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      height: 100%;
+      max-width: 1200px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      max-width: 150px;
+    }
+
+    .content h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .map-container {
+      position: relative;
+      display: inline-block;
+      padding: 30px; /* Increased padding around the map */
+      background-color: #f5f9ff;
+      border-radius: 15px;
+    }
+
+    .map {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .dot {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      border-radius: 50%;
+      animation: pulse 1s infinite;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+      margin-top: -100px;
+    }
+
+    /* Specific Dot Positions */
+    .california {
+      top: 60%;
+      left: 10%;
+    }
+
+    .texas {
+      top: 70%;
+      left: 50%;
+    }
+
+    .nyc {
+      top: 35%;
+      left: 82%;
+    }
+
+    /* Pulse Effect */
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+      }
+      50% {
+        transform: scale(1.5);
+        box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+      }
+    }
+
+    /* Popup Styles */
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 80%;
+      max-width: 400px;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      z-index: 1001;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .popup-content h3 {
+      margin-top: 0;
+      color: #4e3681;
+    }
+
+    .popup-content p {
+      margin: 10px 0;
+    }
+
+    .close-btn {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .close-btn:hover {
+      background-color: #ff4a3d;
+    }
+
+    /* Overlay Styles */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .popup.show {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  </style>
+</html>

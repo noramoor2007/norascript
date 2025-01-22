@@ -1,273 +1,84 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
-
-::-moz-selection { background: rgba(255, 135, 187, 0.602);}
-::selection { background: rgba(255, 135, 187, 0.602); }
-
-body {
-  margin: 100px;
-  margin-top: 100px;
-  margin-bottom: 60px;
+html {
   font-family: system-ui;
-  background: url("IMG_4811.jpg");
-  background-size: cover;
-  font-size:larger;
+  overflow: hidden;
+  background-color: #ffeeb8;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
-
-h1 {
-  color: black;
-}
-button.jupyterstuff {
-  background-color: rgb(255, 135, 188);
-  text-align: left;
-  border-width: 0px;
-  width: fit-content;
-  height: 25px;
-}
-button {
-  background-color: transparent;
-  border-width: 0;
-  width: 107%; 
-  cursor: pointer;
-  border-radius: 10px;
-}
-.projectnavbuttons {
-  height: 25px;
-  width: fit-content;
-  float: left;
-}
-button.codinglangbutt {
-  text-align: left;
-  font-size: 15px;
-  background-color: #ff87bc;
-  height: 25px;
-  width: auto;
-  border-radius: 10px;
-}
-
-td:hover {
-  background-color: #ff5db4;
-  border-radius: 10px;
-}
-
-years {
-  display: inline-block;
-  background-color: transparent;
-  align-content: space-around;
-  width: 100%;
-  font-size: 15px;
-  border-radius: 10px;
-
-}
-button {
-  border-radius: 10px;
-}
-codinglang {
-  display: inline-block;
-  background-color: #ff87bc;
-  border-width: 0px;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-codinglang:hover {
-  background-color: #ff5db4;
-  border-radius: 10px;
-
-}
-
-date1 {
-  display: inline-block;
-  background-color: #ff87bc;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 10px;
-
-}
-
-date1:hover {
-  background-color: #ff5db4;
-}
-
-projnum {
-  display: block;
-  background-color: #ff87bc;
-  cursor: pointer;
-  border-radius: 10px;
-
-}
-
-projnum:hover {
-  background-color: #ff5db4;
-}
-
-.tooltip-wrap {
-  position: relative;
-}
-
-.tooltip-wrap .tooltip-content {
-  display: none;
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
-  right: 5%;
-  background-color: #fff;
-  padding: .5em;
-  min-width: 10rem;
-  font-size: 15px;
-
-}
-
-.tooltip-wrap:hover .tooltip-content {
-  display: block;
-}
-
-.morelinks {
-  font-size: 15px;
-  font-family: system-ui;
-  width: auto;
-  height: 30px;
-  border-radius: 10px;
-  background-color: #ff87bc;
-}
-button {
-  background: linear-gradient(to right),linear-gradient(to right,#ff5db4,#ff147e,rgba(0, 100, 200, 1));
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-}
-button:hover {
-  background-size: 0 25px, 100% 25px;
-}
-a.hometable {
-  text-decoration: none;
-  background:
-    linear-gradient(
-      to right,
-      transparent,
-      transparent
-    ),
-    linear-gradient(
-      to right,
-      #ff5db4,
-      #ff147e,
-      rgba(0, 100, 200, 1)
-  );
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-  text-align: left;
-}
-a.hometable:hover {
-  background-size: 0 3px, 100% 3px;
-}
-a {
-  text-decoration: underline;
-  color: black;
-  font-family: system-ui;
-}
-
-table {
-  line-height: 25px;
-  border-width: 0;
-  background-color: transparent;
-  font-size: 15px;
-  width: 700px;
-  border-radius: 10px;
-}
-
-td {
-  border-width: 0;
-  font-size: 15px;
-  background-color: #ff87bc;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-td.headerstuff {
+.header {
   text-align: center;
-  text-decoration: bold;
-  border-radius: 10px;
 }
 
-.profilepic {
-  width: 20%;
-  border-radius: 10px;
+.logo {
+  text-align: center;
+  width: 200px;
 }
-
-.profilepic:hover .tooltip-content {
-  width: 23%;
+body {
+  /*body text*/
+  font-size: 20px;
 }
-.projectsubcat {
-  font-weight: 250;
-  line-height: 5px;
+.front {
+  /*these are the buttons*/
+  border-radius: 100%;
+  background-color: #32a722;
+  color: white;
+  border-width: 0px;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
 }
-.projectselect {
-  border-color: #ff87bc;
-  border-radius: 10px;
-  background-color: #ff87bc;
-  border-width: 4px;
+.back {
+  border-radius: 100%;
+  background-color: rgb(112, 112, 112);
+  color: white;
+  border-width: 0px;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
 }
-.schoollogo {
-  width: 30px;
+h3.creator {
+  font-size: 18px;
+  text-align: left;
+  /* color:palevioletred; */
+  text-decoration: wavy;
 }
-img.logo {
-  width: 110px;
-}
-.lectures {
-  text-decoration: none;
-  font-weight: 250;
-}
-.Descriptions {
-  font-weight: 200;
-}
-dfn {
-  background: rgba(0,0,0,0.2);
-  border-bottom: dashed 1px rgba(0,0,0,0.8);
-  padding: 0 0.4em;
-  cursor: help;
-  font-style: normal;
-  position: relative;
-}
-dfn::after {
-  content: attr(data-info);
-  display: inline;
+div.arrows {
   position: absolute;
-  top: 22px; left: 0;
-  opacity: 0;
-  width: 230px;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.5em;
-  padding: 0.5em 0.8em;
-  background: rgba(0,0,0,0.8);
+  bottom: 0;
+  margin-bottom: 30px;
+}
+img {
+  border-radius: 50px;
+}
+.logo {
+  border-radius: 0px;
+  }
+#home_img {
+  height: 20px;
+}
+.pulse-button {
+  /* Button default styles, customize them to match your button */
+  display: inline-block;
+  padding: 10px 20px;
   color: #fff;
-  pointer-events: none; /* This prevents the box from apearing when hovered. */
-  transition: opacity 250ms, top 250ms;
-}
-dfn::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 12px; left: 20px;
-  opacity: 0;
-  width: 0; height: 0;
-  border: solid transparent 5px;
-  border-bottom-color: rgba(0,0,0,0.8);
-  transition: opacity 250ms, top 250ms;
-}
-dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
-dfn:hover::after,
-dfn:hover::before {opacity: 1;}
-dfn:hover::after {top: 30px;}
-dfn:hover::before {top: 20px;}
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 
-::-moz-selection { /* Code for Firefox */
-  color: #ff5db4;
-  background:#2e2e2e;
+  /* Apply the pulse animation */
+  animation: pulse 1s infinite;
 }
 
-::selection {
-  color: #ff5db4;
-  background:#2e2e2e;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

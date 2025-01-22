@@ -1,165 +1,135 @@
-<!--I'm scared the position style thing won't work-->
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-  <meta charset = "UTF-8">
-  <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
-  <meta name = "viewport" content = "wide = device-width, initial-scale = 1.0">
-  <title>Nora Moor's Coding Portfolio</title>
-  <link rel = "stylesheet" href = "style.css">
-  <script src = "script.js"></script>
-  <script src = "script.py"></script>
-  <script src = "script.cpp"></script>
-</head> <!--:: means pseudo element selector-->
-<body>
-  <a href = "index.html"><img class = "logo" src = "Screen_Shot_2024-02-18_at_4.20.38_PM-removebg-preview.png"></a>
-  <h1 class = "content">Nora</h1>
-  <h1 style ="font-weight: 200; line-height: 40px;">My discovery of the true<br>power of computer science.</h1><!--<dfn data-info="Nora Moor, a Junior in High School.">someone</dfn> who cares.-->
-  <!--The <br> tag, like \n escape sequence in Python and Java, makes a new line in the string literal.-->
-    <p style = "font-weight: 200;" class = "Descriptions">Today is <i>Wednesday, March 17, 2023</i>, and this is the day I first made my coding portfolio. My name is Nora Moor, and I am a high school junior from New York. I was first introduced to coding more than six years ago when I learned Scratch in my computer class. Since then, I have developed a passion for coding and continued to use Scratch in my free time. I have created over 50 projects in Scratch and over the years, I have gained expertise in various coding languages including Python, Java, HTML, CSS, JavaScript, and R.
-  </p>
-  <!--<h3>Coding Projects</h3>-->
-  <button class = "morelinks" style = "text-align: center; margin-top: 40px;"><a href = "aboutme.html" style = "text-decoration: none">Learn More</a></button>
-  <h2>Computer Programming</h2>
-  <table>
-    <colgroup>
-      <h3>Coding Projects</h3>
-    </colgroup>
-    <tr class = "header_row">
-      <td class = "headerstuff">
-        <codinglang><a href = "codinglanguages.html"><b>Coding Languages/Programs</b></a></codinglang>
-      </td>
-      <!--The difference between <th> and <td> is that <th> is the heading rows, and <td> is the data cells.-->
-     <td class = "headerstuff">
-        <date1><a href = "date.html"><b>Date</b></a></date1>
-      </td>
-    <td class = "headerstuff">
-      <projnum><a href = "projectnumber.html"><b># of Projects</b></a></projnum>
-    </td>
-    </tr>
-    <tr class = "scratch_row">
-      <td>
-        <center><button><b><a class = "hometable" href = "scratchprojects.html" style="font-size: 15px;">Scratch</a></b><i style="font-size: 15px;"> scratch.mit.edu</i></button></center>
-      </td>
-      <td>
-        <center>
-          <years><a href = "17.23.html" style = "text-decoration: none; color: black">2017-2023</a></years> <!--These are called style tags. Also, you must use a semi-colon when you want to assign multiple style attributes to an HTML element.-->
-        </center>
-      </td>
-      <td>
-        <center>
-          <number1><a href = "scratchprojects.html" style = "text-decoration: none; color: black">50+</a></number1>
-        </center>
-      </td>
-    </tr>
-    <tr class = "python_row">
-      <td>
-        <center><button><b><a class = "hometable" href = "pythonprojects.html" style="font-size: 15px;">Python</a></b><i style="font-size: 15px;"> Anaconda/PyCharm/IntelliJ IDEA/Google Colab/Replit</i></button></center>
-      </td>
-      <td>
-        <center>
-          <years><a href = "21.23.html" style = "text-decoration: none; color: black">2021-2023</a></years>
-        </center>
-      </td>
-      <td>
-        <center>
-          <number1><a href = "pythonprojects.html" style = "text-decoration: none; color: black">82+</a></number1>
-        </center>
-      </td>
-    </tr>
-    <tr class = "java_row">
-      <td>
-        <center><button><b><a class = "hometable" href = "javaprojects.html" style="font-size: 15px;">Java</a></b><i style="font-size: 15px;"> BlueJ/IntelliJ IDEA/Replit</i></button></center>
-      <td>
-        <center>
-          <years><a href = "22.23.html" style = "text-decoration: none; color: black">2022-2023</a></years>
-        </center>
-      </td>
-      <td>
-        <center>
-          <number1><a href = "javaprojects.html" style = "text-decoration: none; color: black">22+</a></number1>
-        </center>
-      </td>
-    </tr>
-    <tr class = "r_row">
-      <td>
-        <center><button><b><a class = "hometable" href = "rprojects.html" style="font-size: 15px;">R</a></b><i style="font-size: 15px;"> R Studio/Anaconda</i></button></center>
-      </td>
-      <td>
-        <center>
-          <years><a href = "22.23.html" style = "text-decoration: none; color: black">2022-2023</a></years>
-        </center>
-      </td>
-      <td>
-        <center>
-          <number1><a href = "rprojects.html" style = "text-decoration: none; color: black">1</a></number1>
-        </center>
-      </td>
-    </tr>
-    <tr class = "html_row">
-      <td>
-        <center><button><b><a class = "hometable" href = "htmlprojects.html" style="font-size: 15px;">HTML</a></b><i style="font-size: 15px;"> Visual Studio Code/PyCharm/Replit/IntelliJ IDEA</i></button></center>
-      </td>
-      <td>
-        <center>
-          <years><a href = "23.html" style = "text-decoration: none; color: black">2023</a></years>
-        </center>
-      </td>
-      <td>
-        <center>
-          <number1><a href = "htmlprojects.html" style = "text-decoration: none; color: black">2</a></number1>
-        </center>
-      </td>
-    </tr>
-    <tr class = "javascript_row">
-      <td>
-        <center><button><b><a class = "hometable" href = "javascriptprojects.html" style="font-size: 15px;">JavaScript</a></b><i style="font-size: 15px;"> Visual Studio Code/PyCharm/Replit/IntelliJ IDEA</i></button></center>
-      </td>
-      <td>
-        <center>
-          <years><a href = "23.html" style = "text-decoration: none; color: black">2023</a></years>
-        </center>
-      </td>
-      <td>
-        <center>
-          <number1><a href = "javascriptprojects.html" style = "text-decoration: none; color: black">2</a></number1>
-        </center>
-      </td>
-    </tr>
-    <tr class = "css_row">
-      <td>
-        <center><button><b><a class = "hometable" href = "cssprojects.html" style="font-size: 15px;">CSS</a></b><i style="font-size: 15px;"> Visual Studio Code/PyCharm/Replit/IntelliJ IDEA</i></button></center>
-      </td>
-      <td>
-        <center>
-          <years><a href = "23.html" style = "text-decoration: none; color: black">2023</a></years>
-        </center>
-      </td>
-      <td>
-        <center>
-          <number1><a href = "cssprojects.html" style = "text-decoration: none; color: black">2</a></number1>
-        </center>
-      </td>
-    </tr>
-    <tr class = "ccpp_row">
-      <td>
-        <center><button><b><a class = "hometable" href="ccppprojects.html" style="font-size: 15px;">C/C++</a></b><i style="font-size: 15px;"> CLion/Replit</i></button></center>
-      </td>
-      <td>
-        <center>
-          <years><a href = "23.html" style = "text-decoration: none; color: black">2023</a></years>
-        </center>
-      </td>
-      <td>
-        <center>
-          <number1><a href = "ccppprojects.html" style = "text-decoration: none; color: black">20+</a></number1>
-        </center>
-      </td>
-    </tr>
-  </table>
-  <h2>More Links</h2>
-  <button class = "morelinks" style = "width: auto; height: 30px; border-radius: 10px;"><a href = "dailylogs.html" style = "text-decoration: none; color: black;">Daily Logs</a></button>
-  <button class = "morelinks" style = "width: auto; height: 30px; border-radius: 10px;"><a href = "aboutme.html" style = "text-decoration: none; color: black;">About Me</a></button>
-  <button class = "morelinks" style = "width: auto; height: 30px; border-radius: 10px;"><a href = "contactme.html" style = "text-decoration: none; color: black;">Contact Me</a></button>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geo Quest</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Credits Section -->
+      <div class="credits">Created by Kaylee</div>
+
+      <!-- Logo Section -->
+      <img src="logo.png" alt="Geo Quest Logo" class="logo" />
+
+      <!-- Play Button -->
+      <a href="overview.html" class="play-button">🛂&nbspPlay Now&nbsp✈️</a>
+
+      <!-- Passport Image -->
+      <img src="passporticon.png" alt="Passport" class="passport" />
+
+      <!-- Airplane Image -->
+      <img src="airplanepattern.png" alt="Airplane" class="airplane" />
+    </div>
+    <style>
+                /* General Body Styling */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: url('funnyworld.jpg') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+        width: 100%; /* Ensure the body takes up full width */
+        overflow-x: hidden; /* Prevent horizontal scrollbars, if any */
+      }
+
+
+            /* Main Container */
+            .container {
+              position: relative;
+              margin: 20px;
+              border: 10px solid #ff6347; /* Matches button color */
+              border-radius: 20px;
+              background-color: rgba(255, 255, 255, 0.9);
+              width: calc(100% - 40px);
+              height: calc(100vh - 40px);
+              box-sizing: border-box;
+              overflow: hidden;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            }
+
+            /* Credits Text */
+            .credits {
+              position: absolute;
+              top: 10px;
+              left: 20px;
+              font-size: 18px;
+              color: #333;
+              font-weight: bold;
+              z-index: 100;
+            }
+
+            /* Logo Styling */
+            .logo {
+              position: absolute;
+              top: 30px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 220px;
+              z-index: 100;
+            }
+
+            /* Play Button Styling */
+            .play-button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #ff6347;
+              color: white;
+              font-size: 20px;
+              font-weight: bold;
+              padding: 35px 50px;
+              border: none;
+              border-radius: 30px;
+              text-decoration: none;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+              cursor: pointer;
+              transition: background-color 0.3s, transform 0.2s;
+            }
+
+            .play-button:hover {
+              background-color: #ff4500;
+            }
+
+            .play-button span {
+              margin-left: 10px;
+            }
+
+            /* Passport Image Styling */
+            .passport {
+              position: absolute;
+              bottom: -50px;
+              right: -50px;
+              width: 500px;
+              transform: rotate(-40deg);
+              z-index: 10;
+            }
+
+            /* Airplane Image Styling */
+            .airplane {
+              position: absolute;
+              bottom: -10px;left: -10px;
+              width: 400px;
+              z-index: 10;
+            }
+    </style>
+    <!-- JavaScript -->
+    <script>
+            // This script can be extended for animations, interactivity, or any additional functionality
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const playButton = document.querySelector(".play-button");
+      });
+    </script>
+  </body>
 </html>
